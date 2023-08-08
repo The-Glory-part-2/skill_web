@@ -35,7 +35,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-[5000px]">
+    <div className="h-[5000px] container mx-auto max-w-4xl">
       <div className="flex items-center gap-4 p-6 static">
         <button
           onClick={handleCategory}
@@ -55,10 +55,10 @@ export default function Home() {
 
       
       <h2 className="text-xl">이번주 행사</h2>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {events.map((event, index) => (
           <div key={index} className="p-4">
-            <img src={event.image} alt="" className="rounded-md"/>
+            <img src={event.image} alt="" className="rounded-md w-full"/>
             <h1 className="text-lg font-bold">{event.title}</h1>
             <p className="text-slate-500">{event.date}</p>
             <p className="text-slate-500">{event.time}</p>
