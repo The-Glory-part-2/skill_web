@@ -70,7 +70,7 @@ export default function Home() {
                 <p className="flex text-slate-500 gap-1 items-center"><ClockIcon className="w-4 h-4 text-slate-400"/> {event.time}</p>
               </span>
               <p className="flex text-slate-500 gap-1 items-center"><MapIcon className="w-4 h-4 text-slate-400"/> {event.place}</p>
-            
+            </Link>
           </div>
         ))}
       </div>
