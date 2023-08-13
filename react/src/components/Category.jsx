@@ -20,7 +20,7 @@ export default function Category() {
 
 
   return (
-    <div className="grid grid-cols-2 gap-3 p-4 border rounded-md shadow-sm w-[18rem] bg-white text-slate-500 absolute">
+    <div className="grid grid-cols-2 gap-3 z-20 py-6 px-5 border rounded-md shadow-lg w-[18rem] bg-white text-slate-500">
       {category.map((item, index) => (
         <div key={index}>
           <span className="p-3 hover:font-semibold hover:text-slate-800 cursor-pointer transition-all">{item}</span>
