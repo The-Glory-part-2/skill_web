@@ -1,0 +1,21 @@
+.board {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #d6e6ea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .board h2 {
+    font-size: 2rem;
+    color: #2d2c1f;
+  }
+  
+  .board h3 {
+    color: #342d1a;
+    margin: 0;
+    font-size: 1rem;
+  }
+  
