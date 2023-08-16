@@ -75,7 +75,7 @@ function BoardTest() {
         <AddBoard onAddBoard={addBoardHandler} />
       </section>
       <section>
-        <button onClick={fetchBoardsHandler}>Fetch </button>
+        <button onClick={fetchBoardsHandler}>게시글 불러오기</button>
       </section>
       <section>{content}</section>
     </React.Fragment>
