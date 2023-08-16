@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
+import EventDetail from "./pages/Events/EventDetail";
 import Board from "./pages/Board";
 import Mypage from "./pages/Mypage";
 import Login from "./pages/Login";
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="event/:id" element={<EventDetail />} />
         <Route path="board" element={<Board />} />
         <Route path="board/:id" element={<Board />} />
         <Route path="mypage" element={<Mypage />} />

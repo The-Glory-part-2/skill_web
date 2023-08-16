@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { UserCircleIcon } from "@heroicons/react/24/solid";
+import { UserCircleIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 export default function Navbar() {
 
@@ -9,10 +9,10 @@ export default function Navbar() {
   return (
     <div className="sticky top-0 z-50">
       <nav className="sticky flex flex-row top-0 w-full bg-white/70 backdrop-blur-sm ring-1 ring-slate-100 shadow-sm py-4 px-6 justify-center items-center">
-        <Link to='/' className="basis-1/4">
+        <Link to='/' className="basis-2/4 md:basis-1/4">
           <h1 className="text-lg font-bold">로고</h1>
         </Link>
-        <ul className="flex flex-row gap-4 basis-2/4 justify-center text-slate-400 transition-all">
+        <ul className="hidden md:flex flex-row gap-4 basis-2/4 justify-center text-slate-400 transition-all">
           <li>
             <Link to="#" className="hover:text-slate-800  transition-all p-3">
               행사 정보
@@ -28,10 +28,13 @@ export default function Navbar() {
           <UserCircleIcon className="w-5 h-5"/>
           <span>홍길동님</span>
         </Link> :
-        <div className="flex basis-1/4 justify-end items-center gap-2">
+        <div className="hidden md:flex basis-1/4 justify-end items-center gap-2">
           <Link to='register'><button className="bg-slate-500 text-white px-3 py-2 rounded-md">회원가입</button></Link>
           <Link to='login'><button className="bg-slate-500 text-white px-3 py-2 rounded-md">로그인</button></Link>
         </div> }
+        <div className="flex basis-2/4 md:hidden justify-end">
+          <Bars3Icon className="w-6 h-6 text-slate-400"/>
+        </div>
       </nav>
     </div>
   );
