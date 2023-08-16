@@ -6,7 +6,7 @@ const posts = [
 
 export default function Board() {
   return (
-    <div className="container mx-auto max-w-4xl mt-12">
+    <div className="container mx-auto max-w-4xl mt-12 h-[1000px]">
       <h1 className="text-2xl font-bold">게시판</h1>
       {posts.map((post) => (
         <div key={post.id} className="mt-8 ">
