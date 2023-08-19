@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import './Login.css'
 
 
@@ -38,8 +40,10 @@ export default function Login() {
     
     const onClickConfirmButton = () => {
         if(useEmail === User.email && usePw === User.pw) {
+            <Route path="/" element={<Home />} />
             alert('로그인에 성공했습니다.');
         } else {
+            <Route path="/" element={<Home />} />
             alert('등록되지 않은 회원입니다.');
         }
     }
